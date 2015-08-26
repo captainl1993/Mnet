@@ -2,7 +2,7 @@
  * All.h
  *
  *  Created on: 2015年8月18日
- *      Author: root
+ *      Author: 毛自豪
  */
 
 #ifndef ALL_H_
