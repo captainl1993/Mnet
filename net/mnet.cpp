@@ -11,7 +11,7 @@ namespace mnet
 		MMaster::micsec = micsec;
 		if (thread > MaxThreads)
 			thread = MaxThreads;
-		
+
 		if (port < 0)
 			port = DefualtPort;
 		

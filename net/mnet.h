@@ -7,8 +7,7 @@
  * Version:  v0.1
  * Function List: 主要MServer::Sethandler() 设置服务器消息的处理Handler，MServer::Start()启动服务器监听
  ***********************************************************/
-#ifndef MNET_H_
-#define MNET_H_
+#pragma once
 
 #define MaxThreads 100		//最大的线程数
 #define DefualtPort 89899	//默认的服务器监听端口
@@ -43,18 +42,18 @@
 #endif
 #include <errno.h>
 
-#include "mconitem.h"
-#include "msghandler.h"
+#include "Conitem.h"
+#include "MsgHandler.h"
 #include "WorkerThread.h"
-#include "mmaster.h"
+#include "MMaster.h"
 namespace mnet
 {
 //服务器类接口
-class MServer
-{
-public:
-	static void Sethandler(MsgHandler &msgHadler);
-	static void Start(int port, int thread, int micsec);
-};
+	class MServer
+	{
+		public:
+			static void Sethandler(MsgHandler &msgHadler);
+			static void Start(int port, int thread, int micsec);
+	};
 }
-#endif
+

@@ -4,12 +4,15 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 CPP_SRCS += \
+../DataHandler.cpp \
 ../main.cpp 
 
 OBJS += \
+./DataHandler.o \
 ./main.o 
 
 CPP_DEPS += \
+./DataHandler.d \
 ./main.d 
 
 
